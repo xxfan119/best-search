@@ -30,13 +30,10 @@ export default function SearchInput() {
     if (!searchParams) {
       return;
     }
-    if (searchParams === searchKeys) {
-      return;
-    }
     dispatch(setSearchKeys(searchParams));
     const params = searchParams.trim().replaceAll(" ", "+");
     navigate(paths.search + `/${params}`);
-  }, [dispatch, navigate, searchKeys, searchParams]);
+  }, [dispatch, navigate, searchParams]);
 
   const changeParams = useCallback((e: any) => {
     setParams(e.target.value);

@@ -1,7 +1,8 @@
-import { useMemo } from "react";
+import { useMemo, lazy } from "react";
 import { paths } from "../config/paths";
-import Main from "../pages/main";
-import Search from "../pages/search";
+const Main = lazy(() => import("../pages/main"));
+const Search = lazy(() => import("../pages/search"));
+
 export default function useRouterItems() {
   const routers = useMemo(() => {
     return [
