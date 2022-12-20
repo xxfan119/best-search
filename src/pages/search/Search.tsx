@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import TrendItem from "./TrendItem";
 import { Box, Grid, Skeleton, Stack } from "@mui/material";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { fetchNewList } from "../../store/searchKeys";
+import { useAppDispatch, useAppSelector } from "$store/hooks";
+import { fetchNewList } from "$store/searchKeys";
 
 export default function Search() {
   const params = useParams();

@@ -6,9 +6,9 @@ import { UniversalTransition } from "echarts/features";
 import { CanvasRenderer } from "echarts/renderers";
 
 import { TrendBox } from "./style";
-import { dateFormat } from "../../utils/time";
-import useEventListener from "../../components/hooks/useEventListener";
-import { ListItem } from "../../store/searchKeys/interface";
+import { dateFormat } from "$utils/time";
+import useEventListener from "$components/hooks/useEventListener";
+import { ListItem } from "$store/searchKeys/interface";
 echarts.use([GridComponent, LineChart, CanvasRenderer, UniversalTransition]);
 
 interface Props {
@@ -70,7 +70,7 @@ export default function TrendItem(props: Props) {
     });
     return res;
   }, [data.name, params]);
-  
+
   return (
     <TrendBox>
       <div

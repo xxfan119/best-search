@@ -4,9 +4,9 @@ import { SearchBox } from "./styled";
 import { Button } from "@mui/material";
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { paths } from "../../config/paths";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { setSearchKeys } from "../../store/searchKeys";
+import { paths } from "$config/paths";
+import { useAppDispatch, useAppSelector } from "$store/hooks";
+import { setSearchKeys } from "$store/searchKeys";
 
 export default function SearchInput() {
   const params = window.location.pathname.split("/")[2];

@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { APIBaseUrl } from "../config";
+import { APIBaseUrl } from "$config";
 
 export enum Method {
   POST = "POST",

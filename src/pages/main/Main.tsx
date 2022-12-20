@@ -1,6 +1,6 @@
 import React from "react";
 
-import SearchInput from "../../components/search-item";
+import SearchInput from "$components/search-item";
 import { InputContainer } from "./style";
 export default function Main() {
   return (
